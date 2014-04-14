@@ -1,12 +1,15 @@
-TodosTwo.ReadyState = SC.State.extend({ 
+TodosTwo.ReadyState = SC.State.extend({
   
-  enterState: function() {
+  enterState: function () {
     TodosTwo.getPath('mainPage.mainPane').append();
   },
 
-  exitState: function() {
+  exitState: function () {
     TodosTwo.getPath('mainPage.mainPane').remove();
-  }
+  },
 
+  proveIt: function (someParam) {
+    alert(someParam);
+  }
 });
 
